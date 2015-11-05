@@ -1,0 +1,107 @@
+% Copyright 2011 by Michael Adam <obnox@samba.org>
+%
+% This file may be distributed and/or modified
+%
+% 1. under the LaTeX Project Public License and/or
+% 2. under the GNU Public License.
+%
+% See the file doc/licenses/LICENSE for more details.
+
+\mode<presentation>
+
+%\setbeamercolor*{author in head/foot}{parent=palette tertiary}
+%\setbeamercolor*{author in head/foot}{parent=palette primary,bg=white}
+\setbeamercolor*{author in head/foot}{parent=palette primary}
+\setbeamercolor*{title in head/foot}{parent=palette secondary}
+\setbeamercolor*{date in head/foot}{parent=palette primary}
+
+\setbeamercolor*{logo in head/foot}{parent=palette tertiary}
+\setbeamercolor*{logo in head/foot}{parent=palette primary}
+
+\pgfdeclareimage[width=16mm]{Samba-Logo}{Samba_Logo_4c-grey-bbbbbb-256}
+\pgfdeclareimage[width=16mm]{RedHat-Logo}{Logo_RH_RGB_Default}
+\pgfdeclareimage[width=\paperwidth,height=\paperheight]{Samba-BG}{samba_bg}
+
+%%%%\defbeamertemplate*{footline}{obnoxinfolines theme}
+%%\defbeamertemplate*{headline}{obnoxinfolines theme}
+%%{
+%%  \leavevmode%
+%%  \hbox{%
+%%  \begin{beamercolorbox}[wd=.333333\paperwidth,ht=2.25ex,dp=1ex,center]{author in head/foot}%
+%%    \usebeamerfont{author in head/foot}\insertshortauthor~~(\insertshortinstitute)
+%%  \end{beamercolorbox}%
+%%  \begin{beamercolorbox}[wd=.333333\paperwidth,ht=2.25ex,dp=1ex,center]{title in head/foot}%
+%%    \usebeamerfont{title in head/foot}\insertshorttitle
+%%  \end{beamercolorbox}%
+%%  \begin{beamercolorbox}[wd=.333333\paperwidth,ht=2.25ex,dp=1ex,right]{date in head/foot}%
+%%    \usebeamerfont{date in head/foot}\insertshortdate{}\hspace*{2em}
+%%    \insertframenumber{} / \inserttotalframenumber\hspace*{2ex}
+%%  \end{beamercolorbox}}%
+%%  \vskip0pt%
+%%}
+
+%% %%\defbeamertemplate*{headline}{obnoxinfolines theme}
+%% \defbeamertemplate*{footline}{obnoxinfolines theme}
+%% {
+%%   \leavevmode%
+%%   \hbox{%
+%%   \begin{beamercolorbox}[wd=.5\paperwidth,ht=5ex,dp=1ex,left]{xy}%
+%%     \hspace*{2ex} \hbox{\pgfuseimage{Samba-Logo}}
+%%   \end{beamercolorbox}%
+%%   \begin{beamercolorbox}[wd=.5\paperwidth,ht=5ex,dp=1ex,right]{xy}%
+%%   \hbox{\pgfuseimage{sernet}}
+%%     \hspace*{2ex}\end{beamercolorbox}}%
+%%   \vskip0pt%
+%% }
+
+%%\defbeamertemplate*{headline}{obnoxinfolines theme}
+\defbeamertemplate*{footline}{obnoxinfolines theme}
+{
+  \leavevmode%
+  \hbox{%
+  \begin{beamercolorbox}[wd=.2\paperwidth,ht=5ex,dp=1ex,left]{xy}%
+    \hspace*{2ex} \hbox{\pgfuseimage{Samba-Logo}}
+  \end{beamercolorbox}%
+  \begin{beamercolorbox}[wd=.3\paperwidth,ht=5ex,dp=1ex,center]{author in head/foot}%
+    \usebeamerfont{author in head/foot}\scriptsize\insertshortauthor{}\hspace*{2ex}
+  \end{beamercolorbox}%
+  \begin{beamercolorbox}[wd=.3\paperwidth,ht=5ex,dp=1ex,center]{author in head/foot}%
+    \usebeamerfont{author in head/foot}\scriptsize%
+     \insertshorttitle{} (\insertframenumber{}/\inserttotalframenumber)\hspace*{2ex}
+  \end{beamercolorbox}%
+  \begin{beamercolorbox}[wd=.2\paperwidth,ht=5ex,dp=1ex,right]{xy}%
+  \hbox{\pgfuseimage{RedHat-Logo}}
+    \hspace*{2ex}\end{beamercolorbox}}%
+  \vskip0pt%
+}
+
+
+%%\addtobeamertemplate{frametitle}{
+%%    \begin{textblock*}{\paperwidth}(-4mm,0pt)
+%%        \includegraphics[width=\paperwidth,height=1cm]{samba_bg_cut}
+%%    \end{textblock*}
+%%}
+%%
+%%\addtobeamertemplate{footline}{
+%%    \begin{textblock*}{\paperwidth}(0pt,0pt)
+%%        \includegraphics[width=\paperwidth,height=0.5cm]{samba_bg_cut}
+%%    \end{textblock*}
+%%}
+
+
+%%\setbeamersize{text margin left=1em,text margin right=1em}
+
+\usepackage{textpos}
+
+\addtobeamertemplate{title page}
+{
+  \begin{textblock*}{\paperwidth}(-3em,0pt)
+    \pgfuseimage{Samba-BG}
+    %\includegraphics[width=\paperwidth,height=\paperheight]{samba_bg.png}
+  \end{textblock*}
+}
+
+%\setbeamertemplate{background canvas}{\pgfuseimage{Samba-BG}}
+
+\mode
+<all>

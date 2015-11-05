@@ -1,0 +1,2 @@
+documentclass=[handout]{beamer}
+usepackage={pgfpages}

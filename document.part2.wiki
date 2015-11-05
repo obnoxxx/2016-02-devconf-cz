@@ -1,0 +1,20 @@
+%documentclass={beamer}
+usepackage=[utf8]{inputenc}
+%usepackage={listings}
+%usepackage={wasysym}
+usetheme={ObnoxSamba}
+usepackage={pgf}
+usepackage={multimedia}
+%%%\usepackage{verbatim}
+setbeamercovered={dynamic}
+%setbeamercovered={transparent}
+titleframe=True
+% note: currently a custom mod to wiki2beamer
+titleframeopts=[plain]
+% default info:
+title=[shrt ttl]{Long Title \\ \ }
+subtitle={Event}
+date={custom date}
+author={The Author}
+institute={Affiliation}
+% custom info can follow here:

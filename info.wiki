@@ -1,0 +1,5 @@
+title=[Title]{Long Title\\ \ }
+subtitle={Subtitle}
+date={Put date here}
+author={Michael Adam}
+institute={Company / Org}

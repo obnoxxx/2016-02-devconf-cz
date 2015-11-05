@@ -1,0 +1,81 @@
+% Copyright 2011 by Michael Adam  <obnox@samba.org>
+% Copyright 2004 by Madhusudan Singh <madhusudan.singh@gmail.com>
+%
+% This file may be distributed and/or modified
+%
+% 1. under the LaTeX Project Public License and/or
+% 2. under the GNU Public License.
+%
+% See the file doc/licenses/LICENSE for more details.
+
+
+\mode<presentation>
+
+\useoutertheme{obnoxinfolines}
+\usecolortheme{obnoxsamba}
+
+\setbeamertemplate{navigation symbols}{}
+
+%%\useinnertheme[shadow=true]{rounded}
+\useinnertheme{rectangles}
+% centered squares:
+%\setbeamertemplate{itemize item}{\rule[0.7ex]{0.7ex}{0.7ex}}
+\setbeamertemplate{itemize item}{\rule[0.5ex]{0.5ex}{0.5ex}}
+%\setbeamertemplate{itemize subitem}{\small\rule[0.6ex]{0.6ex}{0.6ex}}
+\setbeamertemplate{itemize subitem}{\small\rule[0.5ex]{0.5ex}{0.5ex}}
+\setbeamertemplate{itemize subsubitem}{\small\rule[0.5ex]{0.5ex}{0.5ex}}
+
+
+\setbeamerfont{block title}{size={}}
+%\setbeamercolor{titlelike}{parent=structure,bg=white}
+\setbeamercolor{titlelike}{parent=structure}
+
+
+
+% blocks
+\setbeamercolor{block title}{fg=white,bg=rhred4!90}
+\setbeamercolor{block title alerted}{use=alerted text,use=block title,fg=alerted text.fg!30!block title.fg,bg=block title.bg}
+\setbeamercolor{block title example}{use=example text,use=block title,fg=example text.fg!30!block title.fg,bg=block title.bg}
+
+\setbeamercolor{block body}{parent=normal text,bg=rhgrey2!50}
+\setbeamercolor{block body alerted}{parent=normal text,use=block title alerted,use=block body,fg=alerted text.fg!50!fg,bg=block body.bg}
+\setbeamercolor{block body example}{parent=normal text,use=block title example,use=block body,fg=example text.fg!40!fg,bg=block body.bg}
+
+\setbeamertemplate{blocks}[rounded]
+% blocks
+
+\newenvironment{sambabg}{
+	\setbeamertemplate{background canvas}%
+		{\includegraphics[width=\paperwidth,height=\paperheight]{samba_bg.png}}
+}
+{
+}
+
+\newcommand{\Sambabg}[1]{
+    \begin{sambabg}%
+    #1%
+    \end{sambabg}%
+}
+
+\renewcommand{\sectionpage}{\usebeamertemplate*{section page}}
+
+\newcommand{\fancySectionOpens}{
+\AtBeginSection[]%
+{
+    \Sambabg{\frame{\sectionpage}}
+}
+}
+
+%\fancySectionOpens
+
+
+%\newcommand{\fancyPartOpens}{
+%\AtBeginPart%
+%{
+%    \Sambabg{\frame{\partpage}}
+%}
+%}
+
+%\fancyPartOpens
+
+\mode<all>

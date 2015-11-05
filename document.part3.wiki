@@ -1,0 +1,3 @@
+[autotemplate]>
+
+>>>content.wiki<<<
