@@ -12,6 +12,22 @@
 %%%   ==> witness, multi-channel ...
 
 
+
+%%%[frame]>
+
+<[sambabg]
+
+==== ====[plain]
+
+<[center]
+\Large
+'''Intro / History'''
+[center]>
+
+[frame]>
+[sambabg]>
+
+
 ==== Samba... ====
 
 <[center]
@@ -37,3 +53,67 @@
 * 4.2: 2015/03: AD trusts, leases, perf/scale, include CTDB
 * 4.3: 2015/09: spotlight, new FileChangeNotify, SMB 3.1.1
 * 4.4: 2016/03: Multi-Channel core, ...
+
+[frame]>
+<[sambabg]
+
+==== ====[plain]
+
+<[center]
+\Large
+'''Clustering - CTDB'''
+[center]>
+
+[frame]>
+[sambabg]>
+
+==== ctdb stuff ====
+
+[frame]>
+<[sambabg]
+
+==== ====[plain]
+
+<[center]
+\Large
+'''SMB3'''
+[center]>
+
+[frame]>
+[sambabg]>
+
+==== FOO ====
+
+
+[frame]>
+<[sambabg]
+==== Thanks for your attention! ====[plain]
+
+%\transdissolve
+
+<[center]
+<[columns]
+[[[.65\textwidth]]]
+
+{\Large
+
+Questions?
+
+--*4em--
+
+@obnox\@samba.org@
+%%@obnox\@redhat.com@
+
+--*1em--
+
+@gd\@samba.org@
+%%@gdeschner\@redhat.com@
+}
+[[[.25\textwidth]]]
+<<<feet-sand-1280.png,height=.8\textheight>>>
+
+[columns]>
+[center]>
+[frame]>
+[sambabg]>
+
