@@ -1,5 +1,5 @@
 title=[Freak Show]{Freak Show\\ \ }
-subtitle={Scaling The Aliens Back To Outer Space}
+subtitle={Scaling Those Aliens Back To Outer Space}
 date={2016-02-07}
 author={Michael Adam, Günther Deschner}
-institute={Red Hat / samba.org}
+institute={Samba Team / Red Hat}
