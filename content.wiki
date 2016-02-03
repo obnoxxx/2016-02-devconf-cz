@@ -6,3 +6,7 @@
 
 ==== Example Slide ====
 
+%%% - samba / smb intro,overview,history
+%%% - smb clustering with ctdb
+%%% - smb3 : clustering
+%%%   ==> witness, multi-channel ...
