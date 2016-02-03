@@ -1,0 +1,74 @@
+Originally 2 talks proposed. 2nd one accepted:
+
+
+TALK #1:
+
+title:
+
+Freak show (#1) : Samba -- herder of protocols from outer space
+
+author: gd
+
+abstract:
+
+Heterogenious environments are a fact and Samba is the link between the
+different worlds.
+
+SMB is the network file system protocol of Windows environments.
+Today, it is a central part of a growing ecosystem of management
+and authentication protocols.  Since the early days of "Windows
+networking", the Samba software has followed up and implemented more
+and more of the growing Windows protocol stack.
+
+This presentation briefly describes the history of SMB and related
+protocols as well as the history of the Samba project.  It then details
+some of the more exciting developments like the Active Directory set of
+protocols first published in Samba 4.0 in 2012 and the recent
+developments in file serving with SMB version 3. The talk explains how
+the relationship to the Windows world has substantially improved in the
+last couple of years. Today, Samba as one of the ldest and most active
+open source projects works closely together with Microsoft on
+interoperability topics.
+
+The talk concludes with a possibly surprising proposal for solutions to
+an old set of problems.....
+
+(The talk will be co-presented with Michael Adam (FAS: obnox).)
+
+
+TALK #2:
+
+#2
+
+title:
+
+Freak show (#2): CTDB -- scaling aliens back to outer space
+
+author: obnox
+
+abstract:
+
+Samba is the well established server software implementing SMB and
+related Windows-protocols on Linux since almost a quarter decade now.
+Despite the fact that it has to follow Windows as the reference
+implementation of all these protocols, Samba was able to substantially
+raise the bar: Long before Microsoft announced SMB file server cluster
+with SMB 3.0 in late 2012, Samba created an all-active scale-out file
+server cluster when running on top of a distributed / clustered file
+system with the introduction of the CTDB software.
+
+While CTDB is at its core a special purpose clustered database and
+messaging transport for Samba, it is also a slim little resource manager
+for virtual IPs and a few other services in the cluster.
+
+This presentation describes the architecture of Samba and the history of
+the creation of CTDB. It demonstrates how easy one can set up a scale
+out Samba cluster on top of a distributed scale-out file system with the
+example of GlusterFS, and illustrates a few of the pleasantries that the
+SMB protocol brings with it in the clustered environment, such as fail
+over without aborting I/O by virtue of durable/persistent file handles.
+
+Finally the current project to move towards a unified HA infrastructure
+for storage components is introduced.
+
+(The talk will be co-presented with Günther Deschner (FAS: gd).)
