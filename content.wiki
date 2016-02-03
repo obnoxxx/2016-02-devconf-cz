@@ -69,6 +69,17 @@
 
 ==== ctdb stuff ====
 
+<[center]
+<<<design-ctdb-three-nodes.png, width=.95\textwidth>>>
+[center]>
+
+==== ctdb stuff ====
+
+<[center]
+<<<ctdb-design-daemons.png, width=\textwidth>>>
+[center]>
+
+
 [frame]>
 <[sambabg]
 
