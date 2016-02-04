@@ -66,8 +66,7 @@
 [frame]>
 [sambabg]>
 
-==== FOO ====
-
+>>>smb3.wiki<<<
 
 [frame]>
 <[sambabg]
