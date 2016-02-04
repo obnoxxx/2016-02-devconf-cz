@@ -1,10 +1,19 @@
+==== SMB3 ====
+
+Improvements of SMB3 over SMB2 include:
+* Transport encryption
+* SMB Direct (SMB over RDMA)
+* SMB Multichannel (multiple connections per session)
+* Witness Service (connection monitoring and transparent failover)
+
 ==== Witness - General ====
 
 New DCE/RPC Service to “witness” availability of other services, in particular SMB3 connections
 * Prompt and explicit notifications about failures in highly available systems
 * Allows Continuous Availability of SMB shares in clustered environments (together with persistent handles)
 * Controlled way of dealing with reconnects instead of detecting failures due to timeouts
-* Available with SMB3
+* Available since SMB3 (Windows 8 / Windows Server 2012)
+* More advanced failover mechanism than Tickle-ACK that is used within CTDB
 
 ==== Witness in Samba ====
 
