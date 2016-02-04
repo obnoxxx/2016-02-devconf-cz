@@ -1,3 +1,13 @@
+==== Samba... ====
+
+* one of the oldest OSS projects (older than Windows NT)
+* large codebase and very active development team
+(According to openhub.net, Samba
+"...has had 101,614 commits made by 363 contributors
+representing 1,637,229 lines of code")
+* present on millions of NAS devices and routers
+
+
 ==== Short History ====
 
 * 1992/01: start of the project
