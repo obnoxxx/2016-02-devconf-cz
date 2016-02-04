@@ -20,6 +20,13 @@ Turn DOS INT 21h local file access into network
 
 ==== Samba... ====
 
+<[center]
+<<<samba-kisses-better-selection.jpg,height=.8\textheight>>>
+[center]>
+
+
+==== Samba... ====
+
 * one of the oldest OSS projects (older than Windows NT)
 * large codebase and very active development team
 <[block]

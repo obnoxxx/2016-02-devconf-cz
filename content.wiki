@@ -28,13 +28,6 @@
 [sambabg]>
 
 
-==== Samba... ====
-
-<[center]
-<<<samba-kisses-better-selection.jpg,height=.8\textheight>>>
-[center]>
-
-
 >>>intro-history.wiki<<<
 
 [frame]>
