@@ -1,3 +1,23 @@
+==== SMB - the alien protocol ====
+
+* SMB - Server Message Block
+* 1983: created by Barry Feigenbaum, IBM \\ %
+Turn DOS INT 21h local file access into network
+* Microsoft:
+** Lan Manager (from 1990)
+** Windows for Workgroups (from 1992)
+* On top of NetBIOS, TCP port 139
+* from Windows 2000: directly on TCP port 445
+
+==== SMB versions $>$ 1 ====
+
+* SMB 2.0: 2006 - Windows Vista
+* SMB 2.1: 2009 - Windows 7/Server 2008R2
+* SMB 3.0: 2012 - Windows 8/Server 2012
+* SMB 3.0.1: 2014: Windows 8.1/Server 2012R2
+* SMB 3.1.1: 2015: Windows 10/Server 2016
+
+
 ==== Samba... ====
 
 * one of the oldest OSS projects (older than Windows NT)
