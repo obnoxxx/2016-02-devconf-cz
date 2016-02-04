@@ -1,2 +1,18 @@
-==== FOO ====
+==== Witness - General ====
 
+New DCE/RPC Service to “witness” availability of other services, in particular SMB3 connections
+* Prompt and explicit notifications about failures in highly available systems
+* Allows Continuous Availability of SMB shares in clustered environments (together with persistent handles)
+* Controlled way of dealing with reconnects instead of detecting failures due to timeouts
+* Available with SMB3
+
+==== Witness in Samba ====
+
+Currently under development in Samba
+* PoC implementation available, currently development on hold until new DCE/RPC async infrastructure is available
+* WIP branch: \\ %
+  https://git.samba.org/?p=gd/samba/.git;a=shortlog;h=refs/heads/master-witness
+
+Samba Witness service will cause Windows clients to reconnect:
+* when client admin tool is used
+* when CTDB (or any other cluster resource control manager) moves resources or IP addresses
