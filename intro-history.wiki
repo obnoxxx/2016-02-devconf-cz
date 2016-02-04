@@ -37,7 +37,7 @@ representing 1,637,229 lines of code"
 * present on millions of NAS devices and routers
 
 
-==== Short History ====
+==== Samba - History ====
 
 * 1992/01: start of the project
 * 1.5: 1993/12: (nbserver)
