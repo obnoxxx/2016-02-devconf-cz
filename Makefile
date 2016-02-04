@@ -51,11 +51,20 @@ DIAIMAGES_FIG := $(foreach image, $(DIAIMAGES_BASE), $(image).fig)
 
 IMAGES = $(DIAIMAGES_PNG)
 
+
+EXTRA_WIKI_FILES = \
+		   intro-history.wiki \
+		   clustering-ctdb.wiki \
+		   smb3.wiki
+
+
 CMN_DEPS = Makefile $(IMAGES)
 
 CMN_DEPS_WIKI = $(CMN_DEPS) document.part1.wiki document.part2.wiki document.part3.wiki content.wiki info.wiki
 
-CMN_DEPS_TEX = $(CMN_DEPS) beamercolorthemeobnoxsamba.sty beamerouterthemeobnoxinfolines.sty beamerthemeObnoxSamba.sty content.tex
+CMN_DEPS_TEX = $(CMN_DEPS) beamercolorthemeobnoxsamba.sty beamerouterthemeobnoxinfolines.sty beamerthemeObnoxSamba.sty
+
+CONTENT_DEPS_WIKI = $(CMN_DEPS) content.wiki $(EXTRA_WIKI_FILES)
 
 COMMON_DEPS = $(CMN_DEPS)
 
@@ -81,7 +90,7 @@ $(TARGET_PR).pdf: $(CMN_DEPS) pr.pdf
 
 pr.pdf: $(CMN_DEPS_TEX) pr.tex
 
-pr.tex: $(CMN_DEPS_WIKI) pr.wiki
+pr.tex: pr.wiki $(CONTENT_DEPS_WIKI)
 
 pr.wiki: $(CMN_DEPS_WIKI) pr.class.wiki
 	cat document.part1.wiki pr.class.wiki document.part2.wiki info.wiki document.part3.wiki > $@
@@ -99,7 +108,7 @@ $(TARGET_HO).pdf: $(CMN_DEPS) ho.pdf
 
 ho.pdf: $(CMN_DEPS_TEX) ho.tex
 
-ho.tex: $(CMN_DEPS_WIKI) ho.wiki
+ho.tex: ho.wiki $(CONTENT_DEPS_WIKI)
 
 ho.wiki: $(CMN_DEPS_WIKI) ho.class.wiki
 	cat document.part1.wiki ho.class.wiki document.part2.wiki info.wiki document.part3.wiki > $@
@@ -117,13 +126,11 @@ $(TARGET_HO2).pdf: $(CMN_DEPS) ho2.pdf
 
 ho2.pdf: $(CMN_DEPS_TEX) ho2.tex
 
-ho2.tex: $(CMN_DEPS_WIKI) ho2.wiki
+ho2.tex: ho2.wiki $(CONTENT_DEPS_WIKI)
 
 ho2.wiki: $(CMN_DEPS_WIKI) ho2.class.wiki
 	cat document.part1.wiki ho2.class.wiki document.part2.wiki info.wiki document.part3.wiki > $@
 
-
-content.tex: content.wiki intro-history.wiki smb3.wiki
 
 
 .wiki.tex:
