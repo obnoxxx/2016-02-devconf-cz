@@ -123,7 +123,7 @@ ho2.wiki: $(CMN_DEPS_WIKI) ho2.class.wiki
 	cat document.part1.wiki ho2.class.wiki document.part2.wiki info.wiki document.part3.wiki > $@
 
 
-content.tex: content.wiki
+content.tex: content.wiki intro-history.wiki smb3.wiki
 
 
 .wiki.tex:
