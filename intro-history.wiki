@@ -14,8 +14,8 @@ Turn DOS INT 21h local file access into network
 * SMB 2.0: 2006 - Windows Vista
 * SMB 2.1: 2009 - Windows 7/Server 2008R2
 * SMB 3.0: 2012 - Windows 8/Server 2012
-* SMB 3.0.1: 2014: Windows 8.1/Server 2012R2
-* SMB 3.1.1: 2015: Windows 10/Server 2016
+* SMB 3.0.2: 2014 - Windows 8.1/Server 2012R2
+* SMB 3.1.1: 2015 - Windows 10/Server 2016
 
 
 ==== Samba... ====
