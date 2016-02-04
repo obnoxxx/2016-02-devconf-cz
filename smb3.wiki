@@ -6,6 +6,30 @@ Improvements of SMB3 over SMB2 include:
 * SMB Multichannel (multiple connections per session)
 * Witness Service (connection monitoring and transparent failover)
 
+
+==== SMB Features - in Samba ====
+
+* SMB 2.0:
+** durable file handles [4.0]
+* SMB 2.1:
+** multi-credit / large mtu [4.0]
+** dynamic reauthentication [4.0]
+** leasing [4.2]
+** resilient file handles [PoC]
+* SMB 3.0:
+** new crypto (sign/encrypt) [4.0]
+** secure negotiation [4.0]
+** durable handles v2 [4.0]
+** persistent file handles [planning/PoC]
+** multi-channel [WIP++ (4.4...)]
+** SMB direct [designed/starting]
+** cluster features [designing]
+*** witness [WIP+]
+** storage features [WIP]
+* SMB 3.1.1:
+** basic support [4.3]
+
+
 ==== Witness - General ====
 
 New DCE/RPC Service to “witness” availability of other services, in particular SMB3 connections
