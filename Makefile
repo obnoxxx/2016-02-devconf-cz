@@ -15,7 +15,7 @@ TARGET = $(TARGET_BASE_NAME)
 # IMAGE_RDMA_V2 = smb3-rdma-samba-v2
 IMAGE_CTDB_3N = design-ctdb-three-nodes
 IMAGE_CTDB_DAEMONS = ctdb-design-daemons
-# IMAGE_SAMBA_LAYERS = samba-layers
+IMAGE_SAMBA_LAYERS = samba-layers
 # IMAGE_SAMBA_RELEASES = samba-release-stream
 # 
 # DIAIMAGES_BASE := $(IMAGE_MC_V1) \
@@ -32,7 +32,8 @@ IMAGE_CTDB_DAEMONS = ctdb-design-daemons
 
 DIAIMAGES_BASE := \
 		  $(IMAGE_CTDB_3N) \
-		  $(IMAGE_CTDB_DAEMONS)
+		  $(IMAGE_CTDB_DAEMONS) \
+		  $(IMAGE_SAMBA_LAYERS)
 
 
 DIAIMAGES :=     $(foreach image, $(DIAIMAGES_BASE), $(image).dia)

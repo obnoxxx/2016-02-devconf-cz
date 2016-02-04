@@ -1,3 +1,9 @@
+==== samba layers ====
+
+<[center]
+<<<samba-layers.png, width=.95\textwidth>>>
+[center]>
+
 ==== ctdb stuff ====
 
 <[center]
