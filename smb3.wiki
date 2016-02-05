@@ -49,3 +49,9 @@ Currently under development in Samba
 Samba Witness service will cause Windows clients to reconnect:
 * when client admin tool is used
 * when CTDB (or any other cluster resource control manager) moves resources or IP addresses
+
+==== Witness in a samba cluster ====
+
+<[center]
+<<<design-ctdb-three-nodes-with-witness.png, width=.95\textwidth>>>
+[center]>

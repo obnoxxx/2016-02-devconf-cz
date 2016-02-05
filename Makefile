@@ -16,6 +16,7 @@ TARGET = $(TARGET_BASE_NAME)
 IMAGE_CTDB_3N = design-ctdb-three-nodes
 IMAGE_CTDB_DAEMONS = ctdb-design-daemons
 IMAGE_SAMBA_LAYERS = samba-layers
+IMAGE_CTDB_3N_WITNESS = design-ctdb-three-nodes-with-witness
 # IMAGE_SAMBA_RELEASES = samba-release-stream
 # 
 # DIAIMAGES_BASE := $(IMAGE_MC_V1) \
@@ -32,6 +33,7 @@ IMAGE_SAMBA_LAYERS = samba-layers
 
 DIAIMAGES_BASE := \
 		  $(IMAGE_CTDB_3N) \
+		  $(IMAGE_CTDB_3N_WITNESS) \
 		  $(IMAGE_CTDB_DAEMONS) \
 		  $(IMAGE_SAMBA_LAYERS)
 
