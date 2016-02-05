@@ -47,6 +47,21 @@ Can we create '''all-active''' SMB clusters on top of that with Samba?
 <<<samba-daemons-vfs-p1.png, width=.8\textwidth>>>
 [center]>
 
+==== Samba - VFS ====
+
+<[block]{Samba NTFS semantics - open files}
+* share modes (whole file access block)
+* mandatory locks (file range access block)
+* oplocks/leases (client-side caching, break/revoke)
+[block]>
+
+
+==== Samba Daemons ====
+
+<[center]
+<<<samba-daemons-vfs-p1.png, width=.8\textwidth>>>
+[center]>
+
 ==== Samba Daemons ====
 
 <[center]
@@ -64,6 +79,36 @@ Can we create '''all-active''' SMB clusters on top of that with Samba?
 <[center]
 <<<samba-daemons-vfs-p4.png, width=.8\textwidth>>>
 [center]>
+
+
+==== smbd : local IPC ====
+
+<[block]{messaging}
+* unix domain socket based
+* historical: signals
+[block]>
+
+<[block]{TDB}
+* 'trivial' data base
+* records: key-value
+* concurrent access with record locks
+* memory mapped
+* ==> data store of the VFS layer
+[block]>
+
+==== CTDB... ====
+
+<[block]{extends the above IPC mechanisms across nodes}
+* messages across nodes
+* '''very special''' clustered TDB implementation \\ %
+  (we may lose certain data...)
+[block]>
+
+<[block]{additionally}
+* also supports persistent DBs (secrets, registry, ...)
+* simple cluster service and IP management software (optional)
+[block]>
+
 
 
 %%%==== Samba layers ====
