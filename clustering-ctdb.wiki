@@ -36,8 +36,9 @@ Can we create '''all-active''' SMB clusters on top of that with Samba?
 
 * SMB-clients not aware\! (Windows...) \\ %
 ==> All nodes must appear as '''one''' SMB server!
+* Nodes must share certain persistent data.
 * Daemons must talk to each other cross-node. \\ %
-==> How do samba daemons talk to each other on one node?
+==> How do Samba daemons talk to each other on one node?
 
 
 ==== Samba layers ====
