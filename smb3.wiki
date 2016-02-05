@@ -53,5 +53,35 @@ Samba Witness service will cause Windows clients to reconnect:
 ==== Witness - Failover with SMB3 in a Samba/CTDB cluster ====
 
 <[center]
-<<<design-ctdb-three-nodes-with-witness.png, width=.95\textwidth>>>
+<<<design-ctdb-three-nodes-with-witness-step0.png, width=.95\textwidth>>>
+[center]>
+
+==== Witness - Failover with SMB3 in a Samba/CTDB cluster ====
+
+<[center]
+<<<design-ctdb-three-nodes-with-witness-step1.png, width=.95\textwidth>>>
+[center]>
+
+==== Witness - Failover with SMB3 in a Samba/CTDB cluster ====
+
+<[center]
+<<<design-ctdb-three-nodes-with-witness-step2.png, width=.95\textwidth>>>
+[center]>
+
+==== Witness - Failover with SMB3 in a Samba/CTDB cluster ====
+
+<[center]
+<<<design-ctdb-three-nodes-with-witness-step3.png, width=.95\textwidth>>>
+[center]>
+
+==== Witness - Failover with SMB3 in a Samba/CTDB cluster ====
+
+<[center]
+<<<design-ctdb-three-nodes-with-witness-step4.png, width=.95\textwidth>>>
+[center]>
+
+==== Witness - Failover with SMB3 in a Samba/CTDB cluster ====
+
+<[center]
+<<<design-ctdb-three-nodes-with-witness-step5.png, width=.95\textwidth>>>
 [center]>
