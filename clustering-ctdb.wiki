@@ -1,4 +1,36 @@
-==== samba layers ====
+==== The Idea... ====
+
++<1->{
+<[block]{Failover SMB clusters...}
+Around 2006, it was quite customary to run Samba file servers in active-passive
+failover clusters.
+[block]>
+}
+
++<2->{
+<[block]{Clustered file systems...}
+At that time, quite a few distributed/clustered file systems
+were available: gfs2, gpfs (IBM), GlusterFS, lustre, ocfs2, ...
+[block]>
+}
+
++<3->{
+<[block]{New Idea...}
+Can we create '''all-active''' SMB clusters on top of that with Samba?
+[block]>
+}
+
+==== from 2007 : CTDB - clustered Samba ====
+
+
+<[block]{Samba+CTDB: pioneer in scale-out SMB}
+* 2006: prototypes
+* 2007: CTDB first usable version (with patched Samba)
+* 2008: Samba 3.2 first experimental support
+* 2009: Samba 3.3 official support
+[block]>
+
+==== Samba layers ====
 
 <[center]
 <<<samba-layers.png, width=.8\textwidth>>>
