@@ -27,15 +27,14 @@ Turn DOS INT 21h local file access into network
 
 ==== Samba... ====
 
-* one of the oldest OSS projects (older than Windows NT)
-* large codebase and very active development team
 <[block]
 {According to openhub.net, Samba}
 "...has had 101,614 commits made by 363 contributors
 representing 1,637,229 lines of code"
 [block]>
 * present on millions of NAS devices and routers
-
+* one of the oldest OSS projects (older than Windows NT)
+* large codebase and very active development team
 
 ==== Samba - History ====
 
