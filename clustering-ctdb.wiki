@@ -41,11 +41,36 @@ Can we create '''all-active''' SMB clusters on top of that with Samba?
 ==> How do Samba daemons talk to each other on one node?
 
 
-==== Samba layers ====
+==== Samba Daemons ====
 
 <[center]
-<<<samba-layers.png, width=.8\textwidth>>>
+<<<samba-daemons-vfs-p1.png, width=.8\textwidth>>>
 [center]>
+
+==== Samba Daemons ====
+
+<[center]
+<<<samba-daemons-vfs-p2.png, width=.8\textwidth>>>
+[center]>
+
+==== Samba Daemons ====
+
+<[center]
+<<<samba-daemons-vfs-p3.png, width=.8\textwidth>>>
+[center]>
+
+==== Samba Daemons ====
+
+<[center]
+<<<samba-daemons-vfs-p4.png, width=.8\textwidth>>>
+[center]>
+
+
+%%%==== Samba layers ====
+%%%
+%%%<[center]
+%%%<<<samba-layers.png, width=.8\textwidth>>>
+%%%[center]>
 
 
 ==== ctdb design - daemons ====

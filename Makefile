@@ -17,6 +17,10 @@ IMAGE_CTDB_3N = design-ctdb-three-nodes
 IMAGE_CTDB_DAEMONS = ctdb-design-daemons
 IMAGE_SAMBA_LAYERS = samba-layers
 IMAGE_CTDB_3N_WITNESS = design-ctdb-three-nodes-with-witness
+IMAGE_SAMBA_DAEMONS_P1 = samba-daemons-vfs-p1
+IMAGE_SAMBA_DAEMONS_P2 = samba-daemons-vfs-p2
+IMAGE_SAMBA_DAEMONS_P3 = samba-daemons-vfs-p3
+IMAGE_SAMBA_DAEMONS_P4 = samba-daemons-vfs-p4
 # IMAGE_SAMBA_RELEASES = samba-release-stream
 # 
 # DIAIMAGES_BASE := $(IMAGE_MC_V1) \
@@ -35,7 +39,11 @@ DIAIMAGES_BASE := \
 		  $(IMAGE_CTDB_3N) \
 		  $(IMAGE_CTDB_3N_WITNESS) \
 		  $(IMAGE_CTDB_DAEMONS) \
-		  $(IMAGE_SAMBA_LAYERS)
+		  $(IMAGE_SAMBA_LAYERS) \
+		  $(IMAGE_SAMBA_DAEMONS_P1) \
+		  $(IMAGE_SAMBA_DAEMONS_P2) \
+		  $(IMAGE_SAMBA_DAEMONS_P3) \
+		  $(IMAGE_SAMBA_DAEMONS_P4)
 
 
 DIAIMAGES :=     $(foreach image, $(DIAIMAGES_BASE), $(image).dia)
