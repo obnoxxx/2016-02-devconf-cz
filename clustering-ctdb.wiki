@@ -20,6 +20,7 @@ Can we create '''all-active''' SMB clusters on top of that with Samba?
 [block]>
 }
 
+
 ==== from 2007 : CTDB - clustered Samba ====
 
 
@@ -30,22 +31,33 @@ Can we create '''all-active''' SMB clusters on top of that with Samba?
 * 2009: Samba 3.3 official support
 [block]>
 
+
+==== Clustered SMB - Challenges ====
+
+* SMB-clients not aware\! (Windows...) \\ %
+==> All nodes must appear as '''one''' SMB server!
+* Daemons must talk to each other cross-node. \\ %
+==> How do samba daemons talk to each other on one node?
+
+
 ==== Samba layers ====
 
 <[center]
 <<<samba-layers.png, width=.8\textwidth>>>
 [center]>
 
-==== ctdb stuff ====
 
-<[center]
-<<<design-ctdb-three-nodes.png, width=.95\textwidth>>>
-[center]>
-
-==== ctdb stuff ====
+==== ctdb design - daemons ====
 
 <[center]
 <<<ctdb-design-daemons.png, width=\textwidth>>>
+[center]>
+
+
+==== ctdb layout - network ====
+
+<[center]
+<<<design-ctdb-three-nodes.png, width=.95\textwidth>>>
 [center]>
 
 
