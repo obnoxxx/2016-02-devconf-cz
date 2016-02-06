@@ -103,3 +103,19 @@ Samba Witness service will cause Windows clients to reconnect:
 <<<design-ctdb-three-nodes-with-witness-step5.png, width=.95\textwidth>>>
 [center]>
 }
+
+==== Multichannel ====
+
+What is multichannel?
+* Bundling of NICs to increase throughput
+* Support for RSS (Receive Side Scaling) capale interfaces
+* So much more...
+
+
+==== What's next ? ====
+
+* SMB Multichannel (in Samba 4.4)
+* DCE/RPC Witness service
+* Persistent Handles
+* SMB Direct (SMB over RDMA)
+* Unix Extensions ?
