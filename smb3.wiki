@@ -42,9 +42,13 @@ New DCE/RPC Service to “witness” availability of other services, in particul
 ==== Witness - Samba ====
 
 Currently under development in Samba
-* PoC implementation available, currently development on hold until new DCE/RPC async infrastructure is available
+* PoC implementation available
+* Currently on hold until new DCE/RPC async infrastructure is available
+* {\footnotesize @https://wiki.samba.org/index.php/Samba3/ \\ %
+   SMB2\#Witness\_Notification\_Protocol@}
 * WIP branch: \\ %
-  https://git.samba.org/?p=gd/samba/.git;a=shortlog;h=refs/heads/master-witness
+  {\footnotesize @https://git.samba.org/?p=gd/samba/.git;a=shortlog; \\ %
+   h=refs/heads/master-witness@}
 
 Samba Witness service will cause Windows clients to reconnect:
 * when client admin tool is used
