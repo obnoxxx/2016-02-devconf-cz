@@ -168,6 +168,19 @@ CTDB_MANAGES_WINBIND=yes
 [code]>
 [block]>
 
+==== CTDB - programs ====
+
+* @ctdbd@
+* @ctdb@
+** @status@
+** @scriptstatus@
+** @ip@
+** @enable/disable@
+** @getdbmap@
+** ...
+* @onnode@
+* @ltdbtool@
+* @ping\_pong@
 
 ==== CTDB Layout - Network ====
 
