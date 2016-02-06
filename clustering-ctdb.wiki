@@ -101,7 +101,7 @@ Can we create '''all-active''' SMB clusters on top of that with Samba?
 <[block]{extends the above IPC mechanisms across nodes}
 * messages across nodes
 * '''very special''' clustered TDB implementation \\ %
-  (we may lose certain data...)
+  (What data may we lose when a node goes down?...)
 [block]>
 
 <[block]{additionally}
