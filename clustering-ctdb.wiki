@@ -118,14 +118,58 @@ Can we create '''all-active''' SMB clusters on top of that with Samba?
 %%%[center]>
 
 
-==== ctdb design - daemons ====
+==== CTDB Design - Daemons ====
 
 <[center]
 <<<ctdb-design-daemons.png, width=\textwidth>>>
 [center]>
 
 
-==== ctdb layout - network ====
+==== CTDB Configuration ====
+
+<[block]{@/etc/sysconfig/ctdb@}
+<[code]
+CTDB_RECOVERY_LOCK=FILENAME
+CTDB_NODES=/etc/ctdb/nodes
+[code]>
+[block]>
+
+<[block]{@/etc/ctdb/nodes@}
+<[code]
+10.11.12.13
+10.11.12.14
+10.11.12.15
+[code]>
+[block]>
+
+<[block]{@/etc/samba/smb.conf@}
+<[code]
+\[global\]
+    clustering = yes
+[code]>
+[block]>
+
+==== CTDB Configuration - optional ====
+
+<[block]{@/etc/sysconfig/ctdb@}
+<[code]
+...
+CTDB_PUBLIC_ADDRESSES=/etc/ctdb/public_addresses
+CTDB_MANAGES_SAMBA=yes
+CTDB_MANAGES_WINBIND=yes
+[code]>
+[block]>
+
+<[block]{@/etc/ctdb/public\_addresses@}
+<[code]
+192.168.100.10/24 eth0
+192.168.100.11/24 eth0
+192.168.100.12/24 eth0
+[code]>
+[block]>
+
+
+==== CTDB Layout - Network ====
 
 <[center]
 <<<design-ctdb-three-nodes.png, width=.95\textwidth>>>
