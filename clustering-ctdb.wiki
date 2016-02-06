@@ -110,6 +110,26 @@ Can we create '''all-active''' SMB clusters on top of that with Samba?
 [block]>
 
 
+==== CTDB - Samba Open Files DB ====
+
+
+<[center]
+<<<samba-open-files-db.png, width=\textwidth>>>
+[center]>
+
+==== CTDB - Samba Open Files DB ====
+
+<[block]{open files db entry}
+* server id (node number, pid)
+* file id
+* access mask
+* share mode
+* flags
+* time
+* oplock/lease
+* ...
+[block]>
+
 
 %%%==== Samba layers ====
 %%%

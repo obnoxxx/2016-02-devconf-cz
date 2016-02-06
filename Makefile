@@ -28,6 +28,7 @@ IMAGE_SAMBA_DAEMONS_P1 = samba-daemons-vfs-p1
 IMAGE_SAMBA_DAEMONS_P2 = samba-daemons-vfs-p2
 IMAGE_SAMBA_DAEMONS_P3 = samba-daemons-vfs-p3
 IMAGE_SAMBA_DAEMONS_P4 = samba-daemons-vfs-p4
+IMAGE_SAMBA_OPEN_FILES_DB = samba-open-files-db
 # IMAGE_SAMBA_RELEASES = samba-release-stream
 # 
 # DIAIMAGES_BASE := $(IMAGE_MC_V1) \
@@ -57,7 +58,8 @@ DIAIMAGES_BASE := \
 		  $(IMAGE_SAMBA_DAEMONS_P1) \
 		  $(IMAGE_SAMBA_DAEMONS_P2) \
 		  $(IMAGE_SAMBA_DAEMONS_P3) \
-		  $(IMAGE_SAMBA_DAEMONS_P4)
+		  $(IMAGE_SAMBA_DAEMONS_P4) \
+		  $(IMAGE_SAMBA_OPEN_FILES_DB)
 
 
 DIAIMAGES :=     $(foreach image, $(DIAIMAGES_BASE), $(image).dia)
