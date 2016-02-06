@@ -118,4 +118,5 @@ What is multichannel?
 * SMB3 DCE/RPC Witness service
 * SMB3 Persistent Handles / CA
 * SMB Direct (SMB3 over RDMA)
+* Multi-Protocol access (NFS,SMB...)
 * SMB2+ Unix Extensions
