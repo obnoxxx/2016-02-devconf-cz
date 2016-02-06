@@ -18,8 +18,10 @@ IMAGE_CTDB_DAEMONS = ctdb-design-daemons
 IMAGE_SAMBA_LAYERS = samba-layers
 IMAGE_CTDB_3N_WITNESS_STEP0 = design-ctdb-three-nodes-with-witness-step0
 IMAGE_CTDB_3N_WITNESS_STEP1 = design-ctdb-three-nodes-with-witness-step1
-IMAGE_CTDB_3N_WITNESS_STEP2 = design-ctdb-three-nodes-with-witness-step2
-IMAGE_CTDB_3N_WITNESS_STEP3 = design-ctdb-three-nodes-with-witness-step3
+IMAGE_CTDB_3N_WITNESS_STEP2A = design-ctdb-three-nodes-with-witness-step2a
+IMAGE_CTDB_3N_WITNESS_STEP2B = design-ctdb-three-nodes-with-witness-step2b
+IMAGE_CTDB_3N_WITNESS_STEP3A = design-ctdb-three-nodes-with-witness-step3a
+IMAGE_CTDB_3N_WITNESS_STEP3B = design-ctdb-three-nodes-with-witness-step3b
 IMAGE_CTDB_3N_WITNESS_STEP4 = design-ctdb-three-nodes-with-witness-step4
 IMAGE_CTDB_3N_WITNESS_STEP5 = design-ctdb-three-nodes-with-witness-step5
 IMAGE_SAMBA_DAEMONS_P1 = samba-daemons-vfs-p1
@@ -44,8 +46,10 @@ DIAIMAGES_BASE := \
 		  $(IMAGE_CTDB_3N) \
 		  $(IMAGE_CTDB_3N_WITNESS_STEP0) \
 		  $(IMAGE_CTDB_3N_WITNESS_STEP1) \
-		  $(IMAGE_CTDB_3N_WITNESS_STEP2) \
-		  $(IMAGE_CTDB_3N_WITNESS_STEP3) \
+		  $(IMAGE_CTDB_3N_WITNESS_STEP2A) \
+		  $(IMAGE_CTDB_3N_WITNESS_STEP2B) \
+		  $(IMAGE_CTDB_3N_WITNESS_STEP3A) \
+		  $(IMAGE_CTDB_3N_WITNESS_STEP3B) \
 		  $(IMAGE_CTDB_3N_WITNESS_STEP4) \
 		  $(IMAGE_CTDB_3N_WITNESS_STEP5) \
 		  $(IMAGE_CTDB_DAEMONS) \
