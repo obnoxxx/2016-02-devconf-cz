@@ -58,27 +58,29 @@ Can we create '''all-active''' SMB clusters on top of that with Samba?
 
 ==== Samba Daemons ====
 
+-<1>{
 <[center]
 <<<samba-daemons-vfs-p1.png, width=.8\textwidth>>>
 [center]>
+}
 
-==== Samba Daemons ====
-
+-<2>{
 <[center]
 <<<samba-daemons-vfs-p2.png, width=.8\textwidth>>>
 [center]>
+}
 
-==== Samba Daemons ====
-
+-<3>{
 <[center]
 <<<samba-daemons-vfs-p3.png, width=.8\textwidth>>>
 [center]>
+}
 
-==== Samba Daemons ====
-
+-<4>{
 <[center]
 <<<samba-daemons-vfs-p4.png, width=.8\textwidth>>>
 [center]>
+}
 
 
 ==== smbd : local IPC ====
