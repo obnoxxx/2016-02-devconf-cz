@@ -114,8 +114,8 @@ What is multichannel?
 
 ==== What's next ? ====
 
-* SMB Multichannel (in Samba 4.4)
-* DCE/RPC Witness service
-* Persistent Handles
-* SMB Direct (SMB over RDMA)
-* Unix Extensions ?
+* SMB3 Multichannel (in Samba 4.4)
+* SMB3 DCE/RPC Witness service
+* SMB3 Persistent Handles / CA
+* SMB Direct (SMB3 over RDMA)
+* SMB2+ Unix Extensions
