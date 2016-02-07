@@ -45,21 +45,6 @@ New DCE/RPC Service to “witness” availability of other services, in particul
 * Available since SMB3 (Windows 8 / Windows Server 2012)
 * More advanced failover mechanism than Tickle-ACK that is used within CTDB
 
-==== Witness - Samba ====
-
-Currently under development in Samba
-* PoC implementation available
-* Currently on hold until new DCE/RPC async infrastructure is available
-* {\footnotesize @https://wiki.samba.org/index.php/Samba3/ \\ %
-   SMB2\#Witness\_Notification\_Protocol@}
-* WIP branch: \\ %
-  {\footnotesize @https://git.samba.org/?p=gd/samba/.git;a=shortlog; \\ %
-   h=refs/heads/master-witness@}
-
-Samba Witness service will cause Windows clients to reconnect:
-* when client admin tool is used
-* when CTDB (or any other cluster resource control manager) moves resources or IP addresses
-
 ==== Witness - Failover with SMB3 in a Samba/CTDB cluster ====
 
 -<1>{
@@ -110,6 +95,20 @@ Samba Witness service will cause Windows clients to reconnect:
 [center]>
 }
 
+==== Witness - Samba ====
+
+Currently under development in Samba
+* PoC implementation available
+* Currently on hold until new DCE/RPC async infrastructure is available
+* {\footnotesize @https://wiki.samba.org/index.php/Samba3/ \\ %
+   SMB2\#Witness\_Notification\_Protocol@}
+* WIP branch: \\ %
+  {\footnotesize @https://git.samba.org/?p=gd/samba/.git;a=shortlog; \\ %
+   h=refs/heads/master-witness@}
+
+Samba Witness service will cause Windows clients to reconnect:
+* when client admin tool is used
+* when CTDB (or any other cluster resource control manager) moves resources or IP addresses
 
 ==== What's next ? ====
 
