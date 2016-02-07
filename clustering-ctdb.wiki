@@ -147,6 +147,13 @@ Can we create '''all-active''' SMB clusters on top of that with Samba?
 [center]>
 
 
+==== CTDB Layout - Network ====
+
+<[center]
+<<<design-ctdb-three-nodes.png, width=.95\textwidth>>>
+[center]>
+
+
 ==== CTDB Configuration ====
 
 <[block]{@/etc/sysconfig/ctdb@}
@@ -203,11 +210,4 @@ CTDB_MANAGES_WINBIND=yes
 * @onnode@
 * @ltdbtool@
 * @ping\_pong@
-
-==== CTDB Layout - Network ====
-
-<[center]
-<<<design-ctdb-three-nodes.png, width=.95\textwidth>>>
-[center]>
-
 
