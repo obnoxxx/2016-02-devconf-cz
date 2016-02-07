@@ -9,6 +9,7 @@
 <[block]{Additionally:}
 * Transport encryption
 * Multi-Channel
+* RDMA transport (SMB Direct)
 [block]>
 
 
