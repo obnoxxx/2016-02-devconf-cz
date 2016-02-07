@@ -110,13 +110,6 @@ Samba Witness service will cause Windows clients to reconnect:
 [center]>
 }
 
-==== Multichannel ====
-
-What is multichannel?
-* Bundling of NICs to increase throughput
-* Support for RSS (Receive Side Scaling) capale interfaces
-* So much more...
-
 
 ==== What's next ? ====
 
