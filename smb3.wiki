@@ -1,10 +1,15 @@
 ==== SMB3 ====
 
-Improvements of SMB3 over SMB2 include:
+<[block]{SMB3 (2012) introduced SMB clustering:}
+* Clustering - Witness
+* Continuous Availability - Persistent Handles
+* Scale Out
+[block]>
+
+<[block]{Additionally:}
 * Transport encryption
-* SMB Direct (SMB over RDMA)
-* SMB Multichannel (multiple connections per session)
-* Witness Service (connection monitoring and transparent failover)
+* Multi-Channel
+[block]>
 
 
 ==== SMB Features - in Samba ====
